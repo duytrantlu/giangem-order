@@ -1,0 +1,1 @@
+export const MONGO_ORDER_CONNECTION_NAME = "orders";

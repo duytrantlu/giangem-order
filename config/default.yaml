@@ -1,0 +1,24 @@
+service:
+  name: api-order
+  baseUrl: /api/order
+  docsBaseUrl: /swagger/order
+  apiVersion: 1.0.0
+  appVersion: 1.0.0
+
+server:
+  host: 127.0.0.1
+  port: 3000
+  hostname: 127.0.0.1:3000
+  swaggerSchema: http
+
+mongodb:
+  orders:
+    uri: mongodb://127.0.0.1:27017/orders
+
+WEBTOKEN_SECRET_KEY: uAsBw6WxqD
+
+MOCK_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDRiMGM0ZmQyOGExOTcwY2Y0MmI2MmIiLCJ1c2VybmFtZSI6InR1YW5uYTEiLCJlbWFpbCI6InR1YW5uYUBnbWFpbC5jb20iLCJhdmF0YXIiOiJodHRwOi8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvMDM4OGNjNzU4NTczZDViMjcxODFkZTY2MDliYzU3YzU_cz0yMDAmcj1wZyZkPTQwNCIsImlhdCI6MTYxNTUzMTA4NywiZXhwIjoxNjIxMjkxMDg3fQ.Fny949IPMYEu7uZP0QvZX-izb9WDQ4O2S4sF7q4ILTc
+
+internal:
+  payment:
+    baseUrl: http://localhost:3001/api/payment
